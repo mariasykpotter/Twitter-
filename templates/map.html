@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_f26d181de39a4fd591ce808b20a95425 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f26d181de39a4fd591ce808b20a95425" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f26d181de39a4fd591ce808b20a95425 = L.map(
+        'map_f26d181de39a4fd591ce808b20a95425', {
+        center: [20.0, -1.0],
+        zoom: 2.5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_d7ef9a22664145a8950dde76021ca71c = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_f26d181de39a4fd591ce808b20a95425);
+    
+        var marker_bb927c05bfff4c7cb48a9b4c393f8e7f = L.marker(
+            [34.0536834, -118.2427669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_bb927c05bfff4c7cb48a9b4c393f8e7f.bindTooltip(
+            `<div>`
+            + `Selena Gomez` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_da1b9ab866cc4b2fbe934986bfbe3df6 = L.marker(
+            [35.2754412, -77.5649681],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_da1b9ab866cc4b2fbe934986bfbe3df6.bindTooltip(
+            `<div>`
+            + `Coldplay` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_83f675fb38e54910be7e8287b1622a87 = L.marker(
+            [36.1662859, -115.149225],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_83f675fb38e54910be7e8287b1622a87.bindTooltip(
+            `<div>`
+            + `Imagine Dragons` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_51f2ba29c9f2485bb687808f09aa2b74 = L.marker(
+            [36.7014631, -118.7559974],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_51f2ba29c9f2485bb687808f09aa2b74.bindTooltip(
+            `<div>`
+            + `Netflix US` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2d2f3075e541486181f6a8fae302e947 = L.marker(
+            [40.7308619, -73.9871558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_2d2f3075e541486181f6a8fae302e947.bindTooltip(
+            `<div>`
+            + `Hillary Clinton` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_199e5fb5dfe7445ca08623ed92bad562 = L.marker(
+            [50.4500644, 30.5241037],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_199e5fb5dfe7445ca08623ed92bad562.bindTooltip(
+            `<div>`
+            + `Svyatoslav Vakarchuk` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4fb004405db945aebaa464859fa4eb67 = L.marker(
+            [45.96502405, -61.4745849403626],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_4fb004405db945aebaa464859fa4eb67.bindTooltip(
+            `<div>`
+            + `SpaceX` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5a12ac918a9b4044bbf0c4d4fdd571bc = L.marker(
+            [38.8950092, -77.0365625],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f26d181de39a4fd591ce808b20a95425);
+        
+    
+        marker_5a12ac918a9b4044bbf0c4d4fdd571bc.bindTooltip(
+            `<div>`
+            + `Donald J. Trump` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
